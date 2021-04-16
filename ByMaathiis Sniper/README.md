@@ -56,13 +56,13 @@ https://github.com/slow/nitro-sniper/wiki/Installation
    },
    "mode": "both", // The mode to run the sniper in. Options: main (only main account), alts (only alts), both
    "nitro": {
-      "max": 2, // The amount of nitros needed to be sniped for the cooldown to activate
+      "max": 50, // The amount of nitros needed to be sniped for the cooldown to activate
       "cooldown": 24 // Cooldown to activate after max nitro has been hit (in hours)
    },
    "giveaway": {
-      "enabled": true, // Wether or not to activate the giveaway sniper (true/false)
+      "enabled": false, // Wether or not to activate the giveaway sniper (true/false)
       "delay": 30, // Delay to react to the giveaway (in seconds)
-      "dm": true, // DM the hoster on giveaway win (true/false)
+      "dm": false, // DM the hoster on giveaway win (true/false)
       "dmMessage": "Hey, i won the giveaway. Could i redeem my prize?", // Message to DM the host
       "dmDelay": 25, // How long to wait to DM (in seconds)
       "blacklistedWords": [ // Blacklisted words for giveaway prizes
@@ -88,14 +88,14 @@ https://github.com/slow/nitro-sniper/wiki/Installation
          "min": 1500, // The minimum member count the server should have
          "max": 50000 // The maximum member count the server should have
       },
-      "max": 10, // The amount of joined invites needed for the cooldown to activate
-      "cooldown": 6 // Cooldown to activate after max joined invites has been hit (in hours)
+      "max": 12, // The amount of joined invites needed for the cooldown to activate
+      "cooldown": 1 // Cooldown to activate after max joined invites has been hit (in hours)
    },
    "webhook": { 
-      "url": "https://discord.com/api/webhooks/.../...", // URL to fire webhook to for notifications
+      "url": "https://discord.com/api/webhooks/832319680952926271/rqu9ZXWlApur2dKGGp8PvvAhQituKRo_MhC0jco9mXmIVWJgn72exnfaVTZ1-ISz68VN", // URL to fire webhook to for notifications
       "enabled": {
          "codeInvalid": false, // Fire webhook on invalid code (true/false)
-         "codeAlreadyRedeemed": false, // Fire webhook on already redeemed code (true/false)
+         "codeAlreadyRedeemed": true, // Fire webhook on already redeemed code (true/false)
          "codeSuccess": true, // Fire webhook on sniped code (true/false)
          "giveawayEntered": true, // Fire webhook on giveaway enter (true/false)
          "giveawayWin": true, // Fire webhook on giveaway win (true/false)
@@ -103,7 +103,7 @@ https://github.com/slow/nitro-sniper/wiki/Installation
       }, 
       "mentionEveryone": { 
          "codeInvalid": false, // Mention on invalid code (true/false)
-         "codeAlreadyRedeemed": false, // Mention on already redeemed code (true/false)
+         "codeAlreadyRedeemed": true, // Mention on already redeemed code (true/false)
          "codeSuccess": true, // Mention on sniped code (true/false)
          "giveawayEntered": false, // Mention on giveaway enter (true/false)
          "giveawayWin": true, // Mention on giveaway win (true/false)
